@@ -1,0 +1,170 @@
+🔹 Project Aim
+
+The aim of this project is to develop a “Productivity Mobile Application” using Kodular (MIT App Inventor platform).
+
+This application helps users improve daily productivity by providing multiple useful features in a single app, such as:
+
+To-Do List (task management)
+Reminder system
+Expense Tracker
+Study Timer
+Weather updates
+Daily Tips
+Calculator
+Schedule planner
+About section
+
+The app is designed with a simple, user-friendly interface that allows easy navigation between different features.
+
+🔹 Application Overview
+
+The application consists of multiple screens, each handling a specific functionality.
+Users can navigate between screens using buttons from the main menu.
+
+🔹 Technical Algorithms (Screen-by-Screen)
+🔸 Screen 1: Main Menu (Home Screen)
+Algorithm:
+Display list of options:
+To Do List
+Reminder
+Expense Tracker
+Study Timer
+Weather
+Daily Tips
+Calculator
+Schedule
+About
+Exit
+When a button is clicked:
+If To Do List clicked → open TodoScreen
+If Reminder clicked → open ReminderScreen
+If Expense Tracker clicked → open ExpenseScreen
+If Study Timer clicked → open TimerScreen
+If Weather clicked → open WeatherScreen
+If Daily Tips clicked → open TipsScreen
+If Calculator clicked → open CalculatorScreen
+If Schedule clicked → open ScheduleScreen
+If About clicked → open AboutScreen
+If Exit clicked → close application
+🔸 Screen 2: To-Do List Screen
+Algorithm:
+
+Initialize:
+
+global tasks ← empty list
+User enters task in TextBox.
+When Add Task button is clicked:
+Check if TextBox is empty:
+If empty → do nothing or show message
+Else:
+Add TextBox.Text to global tasks list
+Update ListView elements with global tasks
+Clear TextBox
+Display all tasks in ListView.
+🔸 Screen 3: Reminder Screen
+Algorithm:
+User inputs reminder text and time.
+When reminder is set:
+Store reminder details
+Display confirmation message
+(Optional) Trigger notification or alert.
+🔸 Screen 4: Expense Tracker Screen
+Algorithm:
+User enters expense amount and description.
+When Add button clicked:
+Store expense in list
+Update total expense
+Display list of expenses.
+🔸 Screen 5: Study Timer Screen
+Algorithm:
+User selects study time.
+When Start button clicked:
+Start timer countdown
+When time finishes:
+Show alert/message "Time Up"
+🔸 Screen 6: Weather Screen
+Algorithm:
+Fetch weather data (API or static display)
+Display:
+Temperature
+Weather condition
+Update periodically.
+🔸 Screen 7: Daily Tips Screen
+Algorithm:
+
+Generate random tip using:
+
+random integer from 1 to 3
+If:
+1 → "Drink Water 💧"
+2 → "Take a Break 🧠"
+3 → "Go for a Walk 🚶"
+Display tip in Label.
+🔸 Screen 8: Calculator Screen
+Algorithm:
+
+User inputs two numbers.
+
+Buttons perform operations:
+
+Addition:
+
+result = num1 + num2
+
+Subtraction:
+
+result = num1 - num2
+
+Multiplication:
+
+result = num1 × num2
+Division:
+If num2 = 0:
+→ show "Cannot divide by 0"
+
+Else:
+
+result = num1 / num2
+
+Display result in Label.
+
+🔸 Screen 9: Schedule Screen
+Algorithm:
+
+Initialize:
+
+global task ← ""
+User enters schedule text.
+When button clicked:
+
+Append new task using:
+
+global task = global task + "\n" + TextBox.Text
+Display updated schedule in Label
+Clear TextBox
+🔸 Screen 10: About Screen
+Algorithm:
+Display app information using Label:
+App name
+Features list
+Developer name
+Version
+
+Example content:
+
+My Productivity App
+Features list (ToDo, Reminder, etc.)
+Developed by: Newton
+Version: 1.0
+🔸 Screen 11: Navigation Control
+Algorithm:
+
+Use:
+
+open another screen screenName
+Ensure all buttons correctly navigate to respective screens.
+Maintain smooth user flow across app.
+🔹 Technologies Used
+Kodular Creator
+MIT App Inventor Blocks Programming
+Android APK Export
